@@ -1,0 +1,681 @@
+:root {
+    --primary-dark-blue: hsl(217, 28%, 15%);
+    --primary-dark-blue-main-bg: hsl(218, 28%, 13%);
+    --primary-dark-blue-footer-bg: hsl(216, 53%, 9%);
+    --primary-dark-blue-testi-bg: hsl(219, 30%, 18%);
+
+    --accent-cyan: hsl(176, 68%, 64%);
+    --accent-blue: hsl(198, 60%, 50%);
+    --accent-light-red: hsl(0, 100%, 63%);
+
+    --neutral-white: hsl(0, 0%, 100%);
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+  }
+
+
+
+  html {
+    font-size: 50%;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+
+    font-family: "Open Sans", sans-serif;
+
+  }
+
+  body,
+  html {
+    background-color: hsl(217, 28%, 15%);
+
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .grid {
+    display: grid;
+  }
+
+
+  .heading-primary,
+  .heading-secondary,
+  .heading-tertiary {
+    font-weight: var(--fw-bold);
+    font-family: "Raleway", sans-serif;
+  }
+
+  .heading-primary {
+    font-size: 2.75rem;
+    padding: 0 4.8rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.25rem;
+  }
+
+  .active {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: default;
+  }
+
+  /* Header */
+  .header {
+    background-color: var(--primary-dark-blue);
+
+    padding: 2.4rem;
+  }
+
+  /* Navigation */
+  .main-nav {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    height: 2rem;
+  }
+
+  .main--nav-list {
+    list-style: none;
+    color: var(--neutral-white);
+    gap: 2.4rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    text-decoration: none;
+    color: var(--neutral-white);
+  }
+
+  .main-nav-link:hover,
+  .main-nav-link:active {
+    text-decoration: underline;
+    font-weight: var(--fw-bold);
+    color: var(--neutral-white);
+  }
+
+  /* Hero Section */
+  .section-hero {
+    padding: 2.4rem 5.2rem 5.2rem 5.2rem;
+    row-gap: 2rem;
+    justify-content: center;
+    background-image: url("./images/bg-curvy-mobile.svg"),
+      linear-gradient(to bottom,
+        var(--primary-dark-blue),
+        var(--primary-dark-blue),
+        var(--primary-dark-blue-main-bg),
+        var(--primary-dark-blue-main-bg));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 3.6rem;
+  }
+
+  .hero-illustration {
+    width: 100%;
+  }
+
+  .hero--content-textBox {
+    flex-direction: column;
+    gap: 2.4rem;
+    text-align: center;
+    color: var(--neutral-white);
+  }
+
+  .hero-description {
+    font-size: 1.75rem;
+  }
+
+
+
+
+  /* Button */
+  .btn-cta {
+    padding: 2rem;
+    justify-self: center;
+    justify-content: center;
+  }
+
+  .btn--cta:link,
+  .btn--cta:visited {
+    font-size: 1.75rem;
+    text-decoration: none;
+    padding: 1.2rem 9.6rem;
+    color: var(--neutral-white);
+    background-color: var(--accent-blue);
+    border-radius: 25px;
+    transition: all 0.3s;
+  }
+
+  .btn--cta:hover,
+  .btn--cta:active {
+    background-color: var(--accent-cyan);
+  }
+
+  /* Feature Section */
+  .section-feature {
+    padding: 6.4rem 3.6rem;
+    color: var(--neutral-white);
+    background-color: var(--primary-dark-blue-main-bg);
+    row-gap: 5.2rem;
+    text-align: center;
+  }
+
+  .feature--illustration-image {
+    width: 20%;
+    margin-bottom: 2.4rem;
+  }
+
+  .feature-name {
+    font-weight: var(--fw-bold);
+    font-size: 1.75rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .feature-description {
+    font-size: 1.75rem;
+  }
+
+  /* Section How To */
+  .section-howTo {
+    padding: 6.4rem 3.6rem;
+    color: var(--neutral-white);
+    background-color: var(--primary-dark-blue-main-bg);
+  }
+
+  .howTo-illustration {
+    width: 100%;
+  }
+
+  .section--howTo-textBox {
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+
+  .howTo-text {
+    font-size: 1.75rem;
+  }
+
+  .howTo-link {
+    width: max-content;
+    gap: 0.4rem;
+    align-items: center;
+    border-bottom: 1px solid var(--accent-cyan);
+    transition: all 0.3s;
+  }
+
+  .howTo-link:hover {
+    fill: var(--neutral-white);
+    border-bottom: 1px solid var(--neutral-white);
+  }
+
+  .howTo--link:link,
+  .howTo--link:visited {
+    font-size: 1.75rem;
+    text-decoration: none;
+    color: var(--accent-cyan);
+    transition: all 0.3s;
+  }
+
+  .howTo--link:hover,
+  .howTo--link:active {
+    color: var(--neutral-white);
+  }
+
+  /* Icons */
+
+
+  .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+  }
+
+  .icon-arrow {
+    background-image: url(images/icon-arrow.svg);
+  }
+
+  .icon-arrow:hover {
+    background-image: url(images/icon-arrow-white.svg);
+  }
+
+  /* Section Testimonals */
+  .section-testimonials {
+    padding: 6.4rem 3.6rem;
+    row-gap: 2.4rem;
+    color: var(--neutral-white);
+    background-color: var(--primary-dark-blue-main-bg);
+  }
+
+  .quotes {
+    position: absolute;
+    width: 3rem;
+    left: 2%;
+    top: -10%;
+    z-index: -1;
+  }
+
+  .testimonial-quotes {
+    position: relative;
+    z-index: 3;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    padding: 2.4rem;
+    gap: 1.2rem;
+    background-color: var(--primary-dark-blue-testi-bg);
+    box-shadow: 0 0.8rem 0.8rem var(--primary-dark-blue);
+  }
+
+  .user-testimonial {
+    font-size: 1.5rem;
+    font-weight: var(--fw-regular);
+  }
+
+  .user-detail {
+    gap: 1.4rem;
+  }
+
+  .user--picture {
+    width: 3rem;
+    border-radius: 50%;
+  }
+
+  .user--name {
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.1rem;
+  }
+
+  .user--occupation {
+    letter-spacing: 0.1rem;
+  }
+
+  /* Section CTA */
+  .section-cta {
+    padding: 6.4rem 5.2rem;
+    color: var(--neutral-white);
+    background-color: var(--primary-dark-blue-main-bg);
+
+    position: relative;
+  }
+
+  .section--cta-content {
+    padding: 4.8rem;
+    justify-content: center;
+    text-align: center;
+    row-gap: 2.4rem;
+    border-radius: 5px;
+    background-color: var(--primary-dark-blue-testi-bg);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  .cta-form {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .email-input {
+    padding: 1.2rem 2rem;
+    border: none;
+    border-radius: 25px;
+  }
+
+  .submit-btn {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.25rem;
+    font-weight: var(--fw-bold);
+    border: none;
+    padding: 1.2rem 2rem;
+    border-radius: 25px;
+    color: var(--neutral-white);
+    background-color: var(--accent-blue);
+    transition: all 0.3s;
+  }
+
+  .submit-btn:hover {
+    color: var(--neutral-white);
+    background-color: var(--accent-cyan);
+  }
+
+  .error-text {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    color: var(--accent-light-red);
+  }
+
+  /* Footer */
+  .footer {
+    row-gap: 2.4rem;
+    padding: 3.6rem;
+    color: var(--neutral-white);
+    background-color: var(--primary-dark-blue-footer-bg);
+  }
+
+  .logo-footer {
+    margin-top: 20rem;
+    width: 15rem;
+  }
+
+  .footer-information,
+  .footer-phone-information,
+  .footer-email-information {
+    gap: 2rem;
+    font-size: 1.75rem;
+    align-items: start;
+  }
+
+  .footer-phone-information,
+  .footer-email-information {
+    align-items: center;
+  }
+
+  .information-location-icon {
+    margin-top: 1rem;
+  }
+
+  .information-icon {
+    height: auto;
+    width: 2rem;
+    align-self: center;
+  }
+
+  .footer-email-phone {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer-list {
+    font-size: 1.75rem;
+
+    flex-direction: column;
+    gap: 1.2rem;
+    list-style: none;
+  }
+
+  .footer--link:link,
+  .footer--link:visited {
+    text-decoration: none;
+    color: var(--neutral-white);
+    transition: all 0.3;
+  }
+
+  .footer--link:hover,
+  .footer--link:active {
+    font-weight: var(--fw-bold);
+  }
+
+  .footer-nav-links {
+    margin-bottom: 3rem;
+  }
+
+  .footer-information-links {
+    margin-bottom: 3rem;
+  }
+
+  .footer-social-links {
+    justify-self: center;
+  }
+
+  /* Socials */
+  .social-list {
+
+    font-size: 1.75rem;
+    list-style: none;
+    gap: 1.2rem;
+  }
+
+  .social--list-item {
+    border: 0.5px solid;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .social--list-item:hover {
+
+    color: var(--accent-cyan);
+  }
+
+  .social-link:link,
+  .social-link:visited {
+    color: var(--neutral-white);
+    transition: all 0.3s;
+  }
+
+  .social-link:hover,
+  .social-link:active {
+    color: var(--accent-cyan);
+  }
+
+  .attribution-container {
+    padding: 1.5rem;
+  }
+
+  .attribution {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  /* @media Queries */
+  @media (min-width: 90em) {
+    html {
+      font-size: 62.5%;
+    }
+
+    .heading-primary {
+      font-size: 5.2rem;
+      line-height: 1.2;
+    }
+
+    .heading-tertiary {
+      font-size: 4.8rem;
+      padding: 0 10rem 0 0;
+    }
+
+    .heading-secondary {
+      font-size: 3.6rem;
+    }
+
+    .active {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: default;
+    }
+
+    /* Header */
+    .header {
+      background-color: var(--primary-dark-blue);
+
+      padding: 3.6rem 7.2rem;
+      font-size: 1.8rem;
+    }
+
+    /* Navigation */
+    .main-nav {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      height: 3.6rem;
+    }
+
+    .main--nav-list {
+      list-style: none;
+      color: var(--neutral-white);
+      gap: 4.8rem;
+    }
+
+    /* Hero Section */
+    .section-hero {
+      padding: 8.4rem 14rem;
+
+      background-color: var(--primary-dark-blue);
+      background-image: url("./images/bg-curvy-desktop.svg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100%;
+    }
+
+    .hero-illustration {
+      width: 60%;
+      justify-self: center;
+    }
+
+    .hero-description {
+      padding: 0 37rem;
+      font-size: 1.4rem;
+      justify-self: center;
+    }
+
+    /* Feature Section */
+
+    .section-feature {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 12rem 16rem;
+
+      color: var(--neutral-white);
+      background-color: var(--primary-dark-blue-main-bg);
+      row-gap: 10.4rem;
+      column-gap: 6.4rem;
+      text-align: center;
+    }
+
+    .feature--illustration-image {
+      width: auto;
+      height: 9.6rem;
+      margin-bottom: 2.4rem;
+    }
+
+    .feature-name {
+      font-weight: var(--fw-bold);
+      font-size: 1.4rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .feature-description {
+      padding: 0 6.4rem;
+      font-size: 1.4rem;
+    }
+
+    /* Section How To */
+    .section-howTo {
+      padding: 6.4rem;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 6.4rem;
+    }
+
+    .section--howTo-textBox {
+      justify-content: center;
+    }
+
+    /* Testimonials Section */
+    .section-testimonials {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 9.6rem;
+      row-gap: 2.4rem;
+      column-gap: 2.4rem;
+      color: var(--neutral-white);
+      background-color: var(--primary-dark-blue-main-bg);
+    }
+
+    .testimonial {
+      padding: 4.8rem 2.4rem 3rem 2.4rem;
+      gap: 2.4rem;
+    }
+
+    .user-testimonial {
+      font-size: 1.4rem;
+    }
+
+    .user-detail {
+      font-size: 1.4rem;
+    }
+
+    /* CTA Section */
+
+    .cta-text {
+      font-size: 1.4rem;
+    }
+
+    .cta-form {
+      gap: 2.4rem;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .email-input {
+      flex: 4;
+      padding: 1.2rem 2rem;
+      font-size: 1.4rem;
+    }
+
+    .submit-btn {
+      flex: 2;
+      font-family: "Raleway", sans-serif;
+      font-size: 1.4rem;
+      font-weight: var(--fw-bold);
+      border: none;
+      padding: 1.2rem 2.4rem;
+      border-radius: 25px;
+      color: var(--neutral-white);
+      background-color: var(--accent-blue);
+    }
+
+    .error-text {
+      margin-top: -1.8rem;
+      margin-left: 2rem;
+      text-align: left;
+    }
+
+    /* Footer */
+    .footer {
+      font-size: 1.4rem;
+      grid-template-columns: 3fr 3fr 1fr 1fr 1fr;
+      column-gap: 2.4rem;
+      justify-content: center;
+    }
+
+    .logo-footer {
+      width: 30rem;
+      grid-column: 1 / -1;
+      justify-content: center;
+    }
+
+    .footer-email-phone {
+      justify-self: center;
+    }
+
+    .footer-nav-links,
+    .footer-information-links {
+      justify-self: center;
+    }
+
+    .social-icon {
+      font-size: 2.4rem;
+    }
+  }
